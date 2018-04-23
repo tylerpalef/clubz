@@ -7,8 +7,9 @@ We'll use this app as a base for exporing some more tools and techniques for aut
 
 ==== Club Rules
 
-- Droids and gangsters are not allowed into any clubs unfortunately
+- Droids and gangsters are not allowed into any clubs unfortunately.
 - Wizards and hobbits are always welcome in all clubs.
+- Only the owner of a club can update or delete it.
 
 ==== Steps:
 
