@@ -3,13 +3,14 @@
 === Welcome to Clubz
 ==== Disrupting the club scene since 2016
 
-We'll use this app as a base for exporing some more tools and techniques for authentication and authorization. Our list of exclusive clubs don't allow certain types of patrons. 
+We'll use this app as a base for exploring some more tools and techniques for authentication and authorization. Our list of exclusive clubs don't allow certain types of patrons.
 
 ==== Club Rules
 
+- You must be logged in to create, edit, or enter a club.
+- You must be the owner of a club to update or delete it.
 - Droids and gangsters are not allowed into any clubs unfortunately.
 - Wizards and hobbits are always welcome in all clubs.
-- Only the owner of a club can update or delete it.
 
 ==== Steps:
 
@@ -20,8 +21,3 @@ We'll use this app as a base for exporing some more tools and techniques for aut
 * Run your database setup
 
 * Make sure your seeds are populated
-
-Throughout the lesson we'll implement the Sorcery gem for authentication which will give us a more powerful platform for authentication features, and if time permits, add some role-based authorization.
-
-
-
