@@ -1,17 +1,12 @@
 class ClubsController < ApplicationController
+before_action :require_login, except: [:index ]
 
   def index
     @clubs = Club.all
   end
 
   def show
-    if current_user
-      @club = Club.find(params[:id])
-      render :show
-    else
-      flash[:alert] = ["You must login to do this"]
-      redirect_to new_session_path
-    end 
+    @club = Club.find(params[:id])
   end
 
   def new
@@ -47,5 +42,16 @@ class ClubsController < ApplicationController
       render :edit
     end
   end
+
+  private
+
+  def require_login
+    unless current_user
+      flash[:alert] = ["You must login to do this"]
+      redirect_to new_session_path
+      return
+    end
+  end
+
 
 end
