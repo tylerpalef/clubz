@@ -5,7 +5,13 @@ class ClubsController < ApplicationController
   end
 
   def show
-    @club = Club.find(params[:id])
+    if current_user
+      @club = Club.find(params[:id])
+      render :show
+    else
+      flash[:alert] = ["You must login to do this"]
+      redirect_to new_session_path
+    end 
   end
 
   def new
