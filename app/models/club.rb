@@ -3,5 +3,5 @@ class Club < ActiveRecord::Base
 
   def self.banned_roles
   ["droid", "ganster"]
-
+  end 
 end
